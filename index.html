@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./blog-test/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="title">
+                <h1>Blog do Victor</h1>
+            </div>
+            <div class="toggle" onclick="toggleDisplay()">
+                <h1>⇅</h1>
+            </div>
+            <div class="add">
+                <a href="#new-post"><h1>+</h1></a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="division">
+            <div class="left-side">
+                <div class="posts-container">
+                    <div class="no-posts">
+                        <h1>Não há postagens.</h1>
+                    </div>
+                    <!--
+                        <div class="post">
+                        <h1 class="post-title">Título</h1>
+                        <h3 class="post-author">Autor</h3>
+                        <p class="post-time">04/01/2023 | 20:08</p>
+                        <p class="post-text">oi</p>
+                    </div>
+                    -->
+                    
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="data-input" id="new-post">
+                    <h3>Criar nova postagem:</h3>
+                    <form>
+                        <input type="text" id="input-title" placeholder="Título">
+                        <input type="text" id="input-author" placeholder="Seu nome">
+                        <textarea id="input-text" placeholder="Seu texto aqui."></textarea>
+                        <div class="colors-container">
+                            <div class="input-color grey" id="grey" onclick="chooseGrey()"></div>
+                            <div class="input-color yellow" id="yellow" onclick="chooseYellow()"></div>
+                            <div class="input-color blue" id="blue" onclick="chooseBlue()"></div>
+                            <div class="input-color green" id="green" onclick="chooseGreen()"></div>
+                            <div class="input-color red" id="red" onclick="chooseRed()"></div>
+                        </div>
+                        <button type="button" id="send" onclick="postText()">Postar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>Victor Freire Oliveira</h3><br>victor.freire.oliveira@gmail.com<br><a href="https://github.com/oliveira-victor" target="_blank">github.com/oliveira-victor</a>
+        </div>
+    </div>
+    <head>
+    <script src="./blog-test/script.js"></script>
+</body>
+</html>
