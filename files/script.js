@@ -27,15 +27,15 @@ function postText() {
         </div>`
 
     if (color == 'yellow') {
-        newPost = `<div class="post yellow">${autoCode}`
+        newPost = `<div class="post fade-in-post yellow">${autoCode}`
     } else if (color == 'blue') {
-        newPost = `<div class="post blue">${autoCode}`
+        newPost = `<div class="post fade-in-post blue">${autoCode}`
     } else if (color == 'green') {
-        newPost = `<div class="post green">${autoCode}`
+        newPost = `<div class="post fade-in-post green">${autoCode}`
     } else if (color == 'red') {
-        newPost = `<div class="post red">${autoCode}`
+        newPost = `<div class="post fade-in-post red">${autoCode}`
     } else {
-        newPost = `<div class="post">${autoCode}`
+        newPost = `<div class="post fade-in-post">${autoCode}`
     }
 
     subject.insertAdjacentHTML('afterend', newPost)
